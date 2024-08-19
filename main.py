@@ -61,4 +61,4 @@ async def get_image(item_id):
     return Response(content=bytes.fromhex(image_bytes)) 
     
 
-app.mount("/", StaticFiles(directory="frontend", html =True), name="frontend")
+app.mount("/", StaticFiles(directory="frontend", html =True), name="frontend", media_type='image/*')
