@@ -70,8 +70,10 @@
         <div class="item-lost__info-price">{item.price}</div>
         <div>{item.description}</div>
       </div>
+      <a class="reedit-btn" href="#/re">수정하기</a>
     </div>
   {/each}
+
   <a class="wirte-btn" href="#/write">+ 글쓰기</a>
 </main>
 
@@ -82,5 +84,11 @@
 <style>
   .info-bar__time {
     color: blue;
+  }
+  .reedit-btn {
+    padding: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 10px;
   }
 </style>

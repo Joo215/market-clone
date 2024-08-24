@@ -13,9 +13,9 @@
     signInWithCredential,
   } from "firebase/auth";
   import { onMount } from "svelte";
-  import Logind from "./pages/Loding.svelte";
   import Mypage from "./pages/Mypage.svelte";
   import Loding from "./pages/Loding.svelte";
+  import ReEdit from "./pages/ReEdit.svelte";
 
   let isLoding = true;
 
@@ -50,6 +50,3 @@
 {:else}
   <Router {routes} />
 {/if}
-
-<style>
-</style>

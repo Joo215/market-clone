@@ -9,8 +9,10 @@
 </script>
 
 <div>나의 당근</div>
-<button on:click={logout}>로그아웃</button>
-
+<div class="mypage_list">
+  <button on:click={logout}>로그아웃</button>
+  <!-- <button>수정하기</button> -->
+</div>
 <Nav location="my" />
 
 <style>
@@ -20,4 +22,11 @@
     border-radius: 5px;
     margin: 10px;
   }
+
+  /* .mypage_list {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  } */
 </style>
